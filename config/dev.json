@@ -1,0 +1,50 @@
+{
+    "db": {
+         "username": "root",
+        "password": "",
+        "database": "test_db",
+        "host": "localhost",
+        "port": "3306",
+        "dialect": "mysql"
+    },
+    "defaultActivationCode":"0000",
+    "auth": {
+        "secret": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9",
+        "tokenPeriod": "1440h"
+    },
+    "webServer": {
+        "url": "http://demo.com",
+        "adminEmail": "admin@demo.com",
+        "baseUrl": "http://demo.com",
+        "port": "4034"
+    },
+    "redis": {
+        "url": "redis:127.0.0.1:6379"
+    },
+    "providers": {
+        "aws": {
+            "key": "AKIA45NJS5WUUIBI3IHZ",
+            "secret": "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",
+            "bucket": "bcoderdev"
+        },
+        "smtp": {
+            "email": "",
+            "pass": ""
+        },
+        "fcm": {
+            "serverKey": "AAAAVEaz9E0:APA91bHdabsd7VSm38bFdZEL6fSB6_l2DQsWyUEWvg-mQY8Owislr_hjBerdUpbm512o0eClQqK7K6BvZ5tziRuRLe7PHzdbpayPOOGJ8QjGV1lYFTEMSxmpYGETGlWsK2BeK8RWCIKze",
+            "url": "https://fcm.googleapis.com/fcm/send"
+        },
+        "link": {
+            "downloadUrl": "http://makecents.codingcopz.in/static/images/"
+        }
+    },
+    "logger": {
+        "console": {
+            "level": "silly",
+            "handleExceptions": true,
+            "json": false,
+            "colorize": true
+        }
+    }
+}

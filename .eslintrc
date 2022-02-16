@@ -1,0 +1,28 @@
+{
+     "env": {
+          "browser": true,
+          "commonjs": true,
+          "es6": true,
+          "node": true
+     },
+     "extends": [
+          "eslint:recommended",
+          "prettier"
+     ],
+     "globals": {
+          "sequelize": true,
+          "Sequelize": true,
+          "db": true
+     },
+     "parserOptions": {
+          "sourceType": "module",
+          "ecmaVersion": 2018
+     },
+     "rules": {
+          "no-useless-catch": 0,
+          "linebreak-style": [
+               "error",
+               "unix"
+          ]
+     }
+}
