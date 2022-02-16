@@ -41,6 +41,9 @@ let initModels = () => {
      db.property.hasMany(db.schedule);
      db.schedule.belongsTo(db.property);
 
+     db.user.hasMany(db.vehicle);
+     db.vehicle.belongsTo(db.user);
+
      return db;
 };
 module.exports = initModels();

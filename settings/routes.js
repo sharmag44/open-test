@@ -225,4 +225,35 @@ module.exports.configure = (app) => {
                filter: auth.requiresToken,
           },
      ]);
+
+     api.model('vehicles').register([
+          {
+               action: 'POST',
+               method: 'create',
+               filter: auth.requiresToken,
+          },
+          {
+               action: 'PUT',
+               method: 'update',
+               url: '/:id',
+               filter: auth.requiresToken,
+          },
+          {
+               action: 'GET',
+               method: 'get',
+               url: '/:id',
+               filter: auth.requiresToken,
+          },
+          {
+               action: 'GET',
+               method: 'search',
+               filter: auth.requiresToken,
+          },
+          {
+               action: 'DELETE',
+               method: 'delete',
+               url: '/:id',
+               filter: auth.requiresToken,
+          },
+     ]);
 };
