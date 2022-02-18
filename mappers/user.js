@@ -1,6 +1,8 @@
 'use strict';
 const _ = require('underscore');
 const propertyMapper = require('./property');
+const vehicleMapper = require('./vehicle');
+
 exports.toModel = (entity) => {
      const model = {
           id: entity.id,
@@ -22,6 +24,9 @@ exports.toModel = (entity) => {
 
      if (entity.properties) {
           model.properties = propertyMapper.toModel(entity.properties);
+     }
+     if (entity.vehicle) {
+          model.vehicle = vehicleMapper.toModel(entity.vehicle);
      }
      return model;
 };

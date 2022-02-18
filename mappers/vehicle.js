@@ -1,6 +1,7 @@
 'use strict';
 const _ = require('underscore');
 const userMapper = require('./user');
+const propertyMapper = require('./property');
 exports.toModel = (entity) => {
      if (Array.isArray(entity)) return this.toSearchModel(entity);
      const model = {
@@ -16,7 +17,9 @@ exports.toModel = (entity) => {
      if (entity.user) {
           model.userMapper = userMapper.toModel(entity.user);
      }
-
+     if (entity.property) {
+          model.property = propertyMapper.toModel(entity.property);
+     }
      return model;
 };
 exports.toSearchModel = (entities) => {
