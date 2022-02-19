@@ -16,7 +16,7 @@
         "url": "http://demo.com",
         "adminEmail": "admin@demo.com",
         "baseUrl": "http://demo.com",
-        "port": "4034"
+        "port": "2222"
     },
     "redis": {
         "url": "redis:127.0.0.1:6379"
