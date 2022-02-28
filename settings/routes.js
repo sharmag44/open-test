@@ -28,7 +28,6 @@ module.exports.configure = (app) => {
                action: 'POST',
                method: 'signUp',
                url: '/signup',
-               filter: auth.requiresTokenOptional,
           },
           {
                action: 'POST',
@@ -40,7 +39,6 @@ module.exports.configure = (app) => {
                action: 'POST',
                method: 'verification',
                url: '/verify',
-               filter: auth.requiresTokenOptional,
           },
           {
                action: 'POST',
